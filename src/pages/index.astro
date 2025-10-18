@@ -1,226 +1,74 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Features from '~/components/widgets/Features.astro';
-import Content from '~/components/widgets/Content.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Contact from '~/components/widgets/Contact.astro';
 
 const metadata = {
-  title: 'ExaOne Digital — Professional Technology Consulting | SEO, Cloud, Automation',
-  description: 'EU-based technology consulting company specializing in SEO optimization, cloud architecture, and business automation for growing European businesses.',
+  title: 'ExaOne Digital — Coming Soon',
+  description: 'Professional technology consulting for European businesses. Website launching soon.',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Section -->
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get in Touch',
-        href: '#contact',
-      },
-      {
-        text: 'Client Area',
-        href: '/client/login',
-        variant: 'secondary'
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Professional Technology Consulting for <span class="text-accent dark:text-white">European Businesses</span>
-    </Fragment>
+  <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <!-- Logo -->
+      <div class="mb-12">
+        <img
+          src="/src/assets/images/exaone-logo.svg"
+          alt="ExaOne Digital"
+          class="h-16 sm:h-20 mx-auto dark:invert"
+        />
+      </div>
 
-    <Fragment slot="subtitle">
-      EU-based expertise in SEO, Cloud Architecture, and Business Automation. Remote delivery, proven results.
-    </Fragment>
-  </Hero>
+      <!-- Main Heading -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+        We're Cooking Something Good
+      </h1>
 
-  <!-- Services Overview Section -->
-  <Features
-    id="services"
-    tagline="What We Do"
-    title="Services That Drive Results"
-    subtitle="From SEO optimization to cloud architecture, we help European businesses scale with proven technical expertise."
-    items={[
-      {
-        title: 'SEO & Affiliate Marketing',
-        description:
-          'Technical SEO optimization, content strategy & implementation, affiliate platform architecture. Real case studies: Thai Visa Reviews.',
-        icon: 'tabler:target',
-      },
-      {
-        title: 'System Architecture & Cloud',
-        description:
-          'Cloud infrastructure design, DevOps & automation, system integration & migration. Scalability consulting for AWS, GCP, Azure.',
-        icon: 'tabler:cloud',
-      },
-      {
-        title: 'Automations & Integrations',
-        description:
-          'Business process automation, API integrations & workflows, custom automation solutions. Example: Domain monitoring system.',
-        icon: 'tabler:adjustments',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
-    </Fragment>
-  </Features>
+      <!-- Subheading -->
+      <p class="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+        Professional technology consulting for European businesses.
+      </p>
 
-  <!-- Portfolio Showcase Section -->
-  <Content
-    tagline="Proven Results"
-    title="Real Projects, Real Expertise"
-    items={[
-      {
-        title: 'Thai Visa Reviews 🇹🇭',
-        description:
-          'SEO-driven affiliate platform. Live case study demonstrating technical SEO, content strategy, and conversion optimization.',
-      },
-      {
-        title: 'Bali Visa Reviews 🇮🇩',
-        description:
-          'Scalable SEO model replication. Coming Q1 2026. Showcasing repeatable affiliate architecture and content systems.',
-      },
-      {
-        title: 'Domain Monitoring System 🔍',
-        description:
-          'Automated expiry tracking using n8n workflows, Majestic API, and Ahrefs API. Real-world automation example.',
-      },
-    ]}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Portfolio Highlights
-      </h3>
-      We don't just consult—we build, run, and scale our own projects. This hands-on experience means we understand what actually works.
-    </Fragment>
-  </Content>
+      <!-- Brief Description -->
+      <div class="max-w-2xl mx-auto mb-12">
+        <p class="text-lg text-gray-700 dark:text-gray-400 mb-4">
+          ExaOne Digital is launching soon with expert services in:
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 text-base text-gray-600 dark:text-gray-400">
+          <span class="px-4 py-2 bg-white dark:bg-slate-800 rounded-lg shadow-sm">
+            SEO & Affiliate Marketing
+          </span>
+          <span class="px-4 py-2 bg-white dark:bg-slate-800 rounded-lg shadow-sm">
+            Cloud Architecture
+          </span>
+          <span class="px-4 py-2 bg-white dark:bg-slate-800 rounded-lg shadow-sm">
+            Business Automation
+          </span>
+        </div>
+      </div>
 
-  <!-- Why ExaOne Digital Section -->
-  <Features
-    id="why-exaone"
-    title="Why Work With Us"
-    subtitle="What sets ExaOne Digital apart in the European consulting market"
-    items={[
-      {
-        title: 'EU Company Legitimacy',
-        description:
-          'Estonian-registered (AEONEX OÜ), full European business compliance. Registered company with transparent operations.',
-        icon: 'tabler:shield-check',
-      },
-      {
-        title: 'Real-World Experience',
-        description:
-          'Active SEO projects, proven automation systems, hands-on expertise. We practice what we preach.',
-        icon: 'tabler:bolt',
-      },
-      {
-        title: 'Remote Excellence',
-        description:
-          'International operations serving European clients efficiently across multiple time zones. Remote isn\'t a compromise—it\'s our advantage.',
-        icon: 'tabler:world',
-      },
-      {
-        title: 'Results-Focused Approach',
-        description:
-          'We build systems that work, not just deliverables. Practical solutions over buzzwords.',
-        icon: 'tabler:trophy',
-      },
-    ]}
-  />
+      <!-- Contact -->
+      <div class="mb-8">
+        <p class="text-gray-600 dark:text-gray-400 mb-4">
+          Interested in working together?
+        </p>
+        <a
+          href="mailto:contact@exaone.digital"
+          class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors duration-200"
+        >
+          Get in Touch
+        </a>
+      </div>
 
-  <!-- Company Brief Section -->
-  <Content
-    isReversed
-    tagline="About ExaOne Digital"
-    items={[
-      {
-        title: 'Founded in 2025',
-        description:
-          'Registered in Estonia with focus on serving growing businesses across Europe.',
-      },
-      {
-        title: 'Hands-on Expertise',
-        description:
-          'We run our own SEO projects (Thai Visa Reviews, Bali Visa Reviews) and build automation systems we actually use.',
-      },
-      {
-        title: 'Modern Tech Stack',
-        description:
-          'Working with Astro, Next.js, Vercel, Supabase, n8n, AWS, GCP, and other production-ready technologies.',
-      },
-    ]}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Who We Are
-      </h3>
-      ExaOne Digital (AEONEX OÜ) is a European technology consulting company specializing in SEO optimization, cloud architecture, and business automation. Founded in 2025 and registered in Estonia, we serve growing businesses across Europe with remote delivery and proven expertise.
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-slate-800"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Contact Form Section -->
-  <Contact
-    id="contact"
-    title="Ready to Get Started?"
-    subtitle="Let's discuss how we can help grow your business."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-        autocomplete: 'given-name',
-        placeholder: 'Your name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-        autocomplete: 'email',
-        placeholder: 'your.email@company.com',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-      name: 'message',
-      placeholder: 'Tell us about your project or question...',
-      rows: 4,
-    }}
-    disclaimer={{
-      label: 'By submitting this form, you agree to our Privacy Policy. We\'ll use your information only to respond to your inquiry.',
-    }}
-    description="Or email us directly at contact@exaone.digital"
-  />
-
-  <!-- Final CTA -->
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get in Touch',
-        href: '#contact',
-      },
-      {
-        text: 'View Services',
-        href: '/services',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Let's Build Something Great Together
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Professional technology consulting for European businesses. <br class="hidden md:inline" />
-      SEO optimization, cloud architecture, and business automation.
-    </Fragment>
-  </CallToAction>
+      <!-- Footer Note -->
+      <div class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700">
+        <p class="text-sm text-gray-500 dark:text-gray-500">
+          AEONEX OÜ (trading as ExaOne Digital)<br/>
+          Estonian technology consulting company<br/>
+          Registration: 17350891
+        </p>
+      </div>
+    </div>
+  </div>
 </Layout>
