@@ -1,30 +1,30 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: ExaOne Digital
+  site: 'https://exaone.digital'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: null # To be configured when GA is set up
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: ExaOne Digital — Professional Technology Consulting
+    template: '%s — ExaOne Digital'
+  description: "EU-based technology consulting company specializing in SEO optimization, cloud architecture, and business automation for growing European businesses."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: ExaOne Digital
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: '@exaonedigital'
+    site: '@exaonedigital'
     cardType: summary_large_image
 
 i18n:
@@ -33,7 +33,7 @@ i18n:
 
 apps:
   blog:
-    isEnabled: true
+    isEnabled: false # Disabled for Week 1 launch
     postsPerPage: 6
 
     post:
