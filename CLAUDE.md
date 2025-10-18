@@ -21,7 +21,6 @@ Registration: 17350891
 Registered: October 15, 2025
 Jurisdiction: Estonia (EU)
 Address: Tornimäe tn 5, 10145 Tallinn, Estonia
-Director: Tomasz Jędrak
 ```
 
 ### Business Focus
@@ -92,6 +91,7 @@ B2B technology consulting services:
 - **Hosting:** Vercel (auto-deploy from GitHub)
 - **Domain:** exaone.digital (ProtonMail DNS)
 - **CDN:** Cloudflare (future consideration)
+- **Local Dev Port:** 3002 (other ports occupied)
 
 ### Integrations
 
@@ -415,6 +415,16 @@ npm install hugeicons-react
 
 ```bash
 npm create astro@latest -- --template arthelokyo/astrowind
+```
+
+### Local Development
+
+```bash
+# Start dev server on port 3002
+npm run dev -- --port 3002
+
+# Or configure in astro.config.mjs:
+# server: { port: 3002 }
 ```
 
 ### Deploy to Vercel
